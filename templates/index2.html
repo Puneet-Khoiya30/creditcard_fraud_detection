@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Credit Card Fraud Detection System</h1>
+    <form action="/" method="POST">
+        <label for="values">Enter Transaction Data (Comma-Separated):</label>
+        <!-- Input box with placeholder for user guidance -->
+        <input type="text" id="values" name="values" 
+               placeholder="e.g., 1.315, -0.034, -1.09, 2.03, -0.05, 0.99, 74080" 
+               pattern="^-?\d+(\.\d+)?(,\s*-?\d+(\.\d+)?)*$" 
+               title="Enter comma-separated values like 1.315, -0.034, -1.09" 
+               required>
+        <button type="submit">Check Fraud</button>
+    </form>
+</body>
+</html>

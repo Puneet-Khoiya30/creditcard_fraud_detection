@@ -1,0 +1,105 @@
+/* static/styles.css */
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eceff1, #cfd8dc);
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+/* Headline styling */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Placeholder text */
+input[type="text"]::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #0288d1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #0277bd;
+}
+
+/* Prediction message styling */
+.prediction-message {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Success (Non-fraudulent) styling */
+.prediction-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #66bb6a;
+}
+
+/* Error (Fraudulent) styling */
+.prediction-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 2px solid #ef5350;
+}
